@@ -13,6 +13,7 @@
 		3F058BE11E38B0F500E26867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F058BE01E38B0F500E26867 /* Assets.xcassets */; };
 		3F058BEC1E38B0F600E26867 /* FireplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F058BEB1E38B0F600E26867 /* FireplayTests.swift */; };
 		3F058BF71E38B0F600E26867 /* FireplayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F058BF61E38B0F600E26867 /* FireplayUITests.swift */; };
+		3F058C051E38BAE100E26867 /* fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F058C041E38BAE100E26867 /* fire.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		3F058BF21E38B0F600E26867 /* FireplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F058BF61E38B0F600E26867 /* FireplayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireplayUITests.swift; sourceTree = "<group>"; };
 		3F058BF81E38B0F600E26867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F058C041E38BAE100E26867 /* fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fire.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				3F058BDB1E38B0F500E26867 /* ViewController.swift */,
 				3F058BDD1E38B0F500E26867 /* Main.storyboard */,
 				3F058BE01E38B0F500E26867 /* Assets.xcassets */,
+				3F058C041E38BAE100E26867 /* fire.mp3 */,
 				3F058BE21E38B0F500E26867 /* Info.plist */,
 			);
 			path = Fireplay;
@@ -234,6 +237,7 @@
 			files = (
 				3F058BE11E38B0F500E26867 /* Assets.xcassets in Resources */,
 				3F058BDF1E38B0F500E26867 /* Main.storyboard in Resources */,
+				3F058C051E38BAE100E26867 /* fire.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +506,7 @@
 				3F058BFD1E38B0F600E26867 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F058BFE1E38B0F600E26867 /* Build configuration list for PBXNativeTarget "FireplayTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +515,7 @@
 				3F058C001E38B0F600E26867 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F058C011E38B0F600E26867 /* Build configuration list for PBXNativeTarget "FireplayUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +524,7 @@
 				3F058C031E38B0F600E26867 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
