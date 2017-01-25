@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F058BDA1E38B0F500E26867 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F058BD91E38B0F500E26867 /* AppDelegate.swift */; };
+		3F058BDC1E38B0F500E26867 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F058BDB1E38B0F500E26867 /* ViewController.swift */; };
+		3F058BDF1E38B0F500E26867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F058BDD1E38B0F500E26867 /* Main.storyboard */; };
+		3F058BE11E38B0F500E26867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F058BE01E38B0F500E26867 /* Assets.xcassets */; };
+		3F058BEC1E38B0F600E26867 /* FireplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F058BEB1E38B0F600E26867 /* FireplayTests.swift */; };
+		3F058BF71E38B0F600E26867 /* FireplayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F058BF61E38B0F600E26867 /* FireplayUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F058BE81E38B0F600E26867 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F058BCE1E38B0F500E26867 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F058BD51E38B0F500E26867;
+			remoteInfo = Fireplay;
+		};
+		3F058BF31E38B0F600E26867 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F058BCE1E38B0F500E26867 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F058BD51E38B0F500E26867;
+			remoteInfo = Fireplay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F058BD61E38B0F500E26867 /* Fireplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fireplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F058BD91E38B0F500E26867 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F058BDB1E38B0F500E26867 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F058BDE1E38B0F500E26867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F058BE01E38B0F500E26867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F058BE21E38B0F500E26867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F058BE71E38B0F600E26867 /* FireplayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireplayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F058BEB1E38B0F600E26867 /* FireplayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireplayTests.swift; sourceTree = "<group>"; };
+		3F058BED1E38B0F600E26867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F058BF21E38B0F600E26867 /* FireplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F058BF61E38B0F600E26867 /* FireplayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireplayUITests.swift; sourceTree = "<group>"; };
+		3F058BF81E38B0F600E26867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F058BD31E38B0F500E26867 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F058BE41E38B0F600E26867 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F058BEF1E38B0F600E26867 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F058BCD1E38B0F500E26867 = {
+			isa = PBXGroup;
+			children = (
+				3F058BD81E38B0F500E26867 /* Fireplay */,
+				3F058BEA1E38B0F600E26867 /* FireplayTests */,
+				3F058BF51E38B0F600E26867 /* FireplayUITests */,
+				3F058BD71E38B0F500E26867 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F058BD71E38B0F500E26867 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F058BD61E38B0F500E26867 /* Fireplay.app */,
+				3F058BE71E38B0F600E26867 /* FireplayTests.xctest */,
+				3F058BF21E38B0F600E26867 /* FireplayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F058BD81E38B0F500E26867 /* Fireplay */ = {
+			isa = PBXGroup;
+			children = (
+				3F058BD91E38B0F500E26867 /* AppDelegate.swift */,
+				3F058BDB1E38B0F500E26867 /* ViewController.swift */,
+				3F058BDD1E38B0F500E26867 /* Main.storyboard */,
+				3F058BE01E38B0F500E26867 /* Assets.xcassets */,
+				3F058BE21E38B0F500E26867 /* Info.plist */,
+			);
+			path = Fireplay;
+			sourceTree = "<group>";
+		};
+		3F058BEA1E38B0F600E26867 /* FireplayTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F058BEB1E38B0F600E26867 /* FireplayTests.swift */,
+				3F058BED1E38B0F600E26867 /* Info.plist */,
+			);
+			path = FireplayTests;
+			sourceTree = "<group>";
+		};
+		3F058BF51E38B0F600E26867 /* FireplayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F058BF61E38B0F600E26867 /* FireplayUITests.swift */,
+				3F058BF81E38B0F600E26867 /* Info.plist */,
+			);
+			path = FireplayUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F058BD51E38B0F500E26867 /* Fireplay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F058BFB1E38B0F600E26867 /* Build configuration list for PBXNativeTarget "Fireplay" */;
+			buildPhases = (
+				3F058BD21E38B0F500E26867 /* Sources */,
+				3F058BD31E38B0F500E26867 /* Frameworks */,
+				3F058BD41E38B0F500E26867 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fireplay;
+			productName = Fireplay;
+			productReference = 3F058BD61E38B0F500E26867 /* Fireplay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F058BE61E38B0F600E26867 /* FireplayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F058BFE1E38B0F600E26867 /* Build configuration list for PBXNativeTarget "FireplayTests" */;
+			buildPhases = (
+				3F058BE31E38B0F600E26867 /* Sources */,
+				3F058BE41E38B0F600E26867 /* Frameworks */,
+				3F058BE51E38B0F600E26867 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F058BE91E38B0F600E26867 /* PBXTargetDependency */,
+			);
+			name = FireplayTests;
+			productName = FireplayTests;
+			productReference = 3F058BE71E38B0F600E26867 /* FireplayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F058BF11E38B0F600E26867 /* FireplayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F058C011E38B0F600E26867 /* Build configuration list for PBXNativeTarget "FireplayUITests" */;
+			buildPhases = (
+				3F058BEE1E38B0F600E26867 /* Sources */,
+				3F058BEF1E38B0F600E26867 /* Frameworks */,
+				3F058BF01E38B0F600E26867 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F058BF41E38B0F600E26867 /* PBXTargetDependency */,
+			);
+			name = FireplayUITests;
+			productName = FireplayUITests;
+			productReference = 3F058BF21E38B0F600E26867 /* FireplayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F058BCE1E38B0F500E26867 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Paramesh;
+				TargetAttributes = {
+					3F058BD51E38B0F500E26867 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XSJRRDKMW9;
+						ProvisioningStyle = Automatic;
+					};
+					3F058BE61E38B0F600E26867 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XSJRRDKMW9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F058BD51E38B0F500E26867;
+					};
+					3F058BF11E38B0F600E26867 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XSJRRDKMW9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F058BD51E38B0F500E26867;
+					};
+				};
+			};
+			buildConfigurationList = 3F058BD11E38B0F500E26867 /* Build configuration list for PBXProject "Fireplay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F058BCD1E38B0F500E26867;
+			productRefGroup = 3F058BD71E38B0F500E26867 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F058BD51E38B0F500E26867 /* Fireplay */,
+				3F058BE61E38B0F600E26867 /* FireplayTests */,
+				3F058BF11E38B0F600E26867 /* FireplayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F058BD41E38B0F500E26867 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F058BE11E38B0F500E26867 /* Assets.xcassets in Resources */,
+				3F058BDF1E38B0F500E26867 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F058BE51E38B0F600E26867 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F058BF01E38B0F600E26867 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F058BD21E38B0F500E26867 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F058BDC1E38B0F500E26867 /* ViewController.swift in Sources */,
+				3F058BDA1E38B0F500E26867 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F058BE31E38B0F600E26867 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F058BEC1E38B0F600E26867 /* FireplayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F058BEE1E38B0F600E26867 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F058BF71E38B0F600E26867 /* FireplayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F058BE91E38B0F600E26867 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F058BD51E38B0F500E26867 /* Fireplay */;
+			targetProxy = 3F058BE81E38B0F600E26867 /* PBXContainerItemProxy */;
+		};
+		3F058BF41E38B0F600E26867 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F058BD51E38B0F500E26867 /* Fireplay */;
+			targetProxy = 3F058BF31E38B0F600E26867 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F058BDD1E38B0F500E26867 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F058BDE1E38B0F500E26867 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F058BF91E38B0F600E26867 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		3F058BFA1E38B0F600E26867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F058BFC1E38B0F600E26867 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = XSJRRDKMW9;
+				INFOPLIST_FILE = Fireplay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fireplaying.Fireplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3F058BFD1E38B0F600E26867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = XSJRRDKMW9;
+				INFOPLIST_FILE = Fireplay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fireplaying.Fireplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3F058BFF1E38B0F600E26867 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XSJRRDKMW9;
+				INFOPLIST_FILE = FireplayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fireplaying.FireplayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fireplay.app/Fireplay";
+			};
+			name = Debug;
+		};
+		3F058C001E38B0F600E26867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XSJRRDKMW9;
+				INFOPLIST_FILE = FireplayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fireplaying.FireplayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fireplay.app/Fireplay";
+			};
+			name = Release;
+		};
+		3F058C021E38B0F600E26867 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = XSJRRDKMW9;
+				INFOPLIST_FILE = FireplayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fireplaying.FireplayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Fireplay;
+			};
+			name = Debug;
+		};
+		3F058C031E38B0F600E26867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = XSJRRDKMW9;
+				INFOPLIST_FILE = FireplayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fireplaying.FireplayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Fireplay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F058BD11E38B0F500E26867 /* Build configuration list for PBXProject "Fireplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F058BF91E38B0F600E26867 /* Debug */,
+				3F058BFA1E38B0F600E26867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F058BFB1E38B0F600E26867 /* Build configuration list for PBXNativeTarget "Fireplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F058BFC1E38B0F600E26867 /* Debug */,
+				3F058BFD1E38B0F600E26867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3F058BFE1E38B0F600E26867 /* Build configuration list for PBXNativeTarget "FireplayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F058BFF1E38B0F600E26867 /* Debug */,
+				3F058C001E38B0F600E26867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3F058C011E38B0F600E26867 /* Build configuration list for PBXNativeTarget "FireplayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F058C021E38B0F600E26867 /* Debug */,
+				3F058C031E38B0F600E26867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F058BCE1E38B0F500E26867 /* Project object */;
+}
