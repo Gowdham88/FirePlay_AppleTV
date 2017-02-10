@@ -14,6 +14,7 @@
 		3F058BEC1E38B0F600E26867 /* FireplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F058BEB1E38B0F600E26867 /* FireplayTests.swift */; };
 		3F058BF71E38B0F600E26867 /* FireplayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F058BF61E38B0F600E26867 /* FireplayUITests.swift */; };
 		3F058C051E38BAE100E26867 /* fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F058C041E38BAE100E26867 /* fire.mp3 */; };
+		3FF02CF41E4DE5FF00B3484E /* VideoPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF02CF31E4DE5FF00B3484E /* VideoPlay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,10 @@
 		3F058BF61E38B0F600E26867 /* FireplayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireplayUITests.swift; sourceTree = "<group>"; };
 		3F058BF81E38B0F600E26867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F058C041E38BAE100E26867 /* fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fire.mp3; sourceTree = "<group>"; };
+		3FF02CE61E4D754D00B3484E /* fast.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = fast.mp4; sourceTree = "<group>"; };
+		3FF02CE71E4D754D00B3484E /* normal.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = normal.mp4; sourceTree = "<group>"; };
+		3FF02CE81E4D754D00B3484E /* slow00.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = slow00.mp4; sourceTree = "<group>"; };
+		3FF02CF31E4DE5FF00B3484E /* VideoPlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +105,11 @@
 				3F058BD91E38B0F500E26867 /* AppDelegate.swift */,
 				3F058BDB1E38B0F500E26867 /* ViewController.swift */,
 				3F058BDD1E38B0F500E26867 /* Main.storyboard */,
+				3FF02CF31E4DE5FF00B3484E /* VideoPlay.swift */,
 				3F058BE01E38B0F500E26867 /* Assets.xcassets */,
+				3FF02CE61E4D754D00B3484E /* fast.mp4 */,
+				3FF02CE71E4D754D00B3484E /* normal.mp4 */,
+				3FF02CE81E4D754D00B3484E /* slow00.mp4 */,
 				3F058C041E38BAE100E26867 /* fire.mp3 */,
 				3F058BE21E38B0F500E26867 /* Info.plist */,
 			);
@@ -195,6 +204,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = XSJRRDKMW9;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.appletvos = {
+								enabled = 1;
+							};
+						};
 					};
 					3F058BE61E38B0F600E26867 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -263,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F058BDC1E38B0F500E26867 /* ViewController.swift in Sources */,
+				3FF02CF41E4DE5FF00B3484E /* VideoPlay.swift in Sources */,
 				3F058BDA1E38B0F500E26867 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

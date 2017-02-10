@@ -7,72 +7,186 @@
 //
 
 import UIKit
+import AVKit
 import AVFoundation
+import CoreImage
+
+
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var myImages: UIImageView!
-    @IBOutlet weak var popView: UIView!
-    var mygifNames = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60"]
+    @IBOutlet var forwardSlider: UIView!
+    @IBOutlet var brightView: UIView!
+     
+    @IBOutlet var viewupDown: UIView!
     
-    var mygif = [UIImage]()
+    
+    @IBOutlet var videoView: VideoPlay!
+    
+    
+    @IBOutlet var brightnessBtn: UILabel!
+    
+    @IBOutlet var speedBtn: UILabel!
+    
+    @IBOutlet var popView1: UIView!
 
     var player:AVAudioPlayer = AVAudioPlayer()
+    var avPlayer: AVPlayer!
+    var avPlayerLayer: AVPlayerLayer!
+    var paused: Bool = false
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.brightnessBtn.isHidden = true
+        self.speedBtn.isHidden = true
+        self.viewupDown.isHidden = true
+        popView1.isHidden = true
+       
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(sender:)))
+        self.view.addGestureRecognizer(tapGesture)
+      
+        self.SetUpSound()
+        
+//        playmyVideo(myString: "normal")
         
         
-        for i in 0..<mygifNames.count{
-            
-            
-            mygif.append(UIImage(named: mygifNames[i])!)
-            
-        }
-        
-        myImages.animationImages = mygif
-        myImages.animationDuration = 2.20
-        self.myImages.startAnimating()
-
-        // Do any additional setup after loading the view, typically from a nib.
         
         
-        do{
-            
-            player = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "fire", ofType: "mp3")!))
-            
-            player.prepareToPlay()
-        }
-        catch{
-            
-            print(error)
-        }
-        player.numberOfLoops = -1
-        player.play()
-
         
     }
+    
+    
+    
+    func playmyVideo(myString: String) {
+        
+        
+        
+        //        videoPlayer.URL = Bundle.main.url(forResource: myString, withExtension: "mp4")!
+        
+        //NSURL(string: "http://uploadingit.com/file/pkgz6mplwtodlzl6/Mac%20OS%20X%20Snow%20Leopard%20Intro%20Movie%20HD.mp4") as URL?
+        
+        let bundle: Bundle = Bundle.main
+        let videoPlayer: String = bundle.path(forResource: "normal", ofType: "mp4")!
+        let movieUrl : NSURL = NSURL.fileURL(withPath: videoPlayer) as NSURL
+        
+        videoView.playVideoWithURL(url: movieUrl)
+        
+        
+        
+        
+        
+    }
+    
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func fireOnoff(_ sender: Any) {
+    override func viewDidDisappear(_ animated: Bool) {
         
-        if player.isPlaying {
-            player.pause()
+        avPlayer.pause()
+        player.pause()
+        paused = true
+        
+       
+            
         }
-        else{
+    
+    func handleTap(sender: UITapGestureRecognizer) {
+        
+        if self.viewupDown.isHidden {
+            
+            self.viewupDown.isHidden = false
+            popView1.isHidden   = false
+            
+        } else {
+            
+            self.viewupDown.isHidden = true
+            popView1.isHidden = true
+            
+            
+        }
+        
+    }
+
+    
+
+    
+    @IBAction func fireOnoff(_ sender: Any) {
+        if player.isPlaying {
+            
+            player.pause()
+            
+        } else {
+            
             player.numberOfLoops = -1
             player.play()
             
         }
+
         
         
     }
+    @IBAction func brightPressed(_ sender: Any) {
+        self.popView1.layer.borderWidth = 1.0
+        
+        self.popView1.layer.borderColor = UIColor(red:216/255.0, green:216/255.0, blue:216/255.0, alpha: 1.0).cgColor
+        
+        popView1.layer.cornerRadius = 15
+        forwardSlider.isHidden = true
+        if popView1.isHidden == true {
+             brightView.isHidden = false
+            popView1.isHidden = false
+        } else {
+            
+            popView1.isHidden = true
+           
+            brightView.isHidden = true
+        }
+    }
 
+    
+        
+    
+
+    @IBAction func fastForward(_ sender: Any) {
+        self.popView1.layer.borderWidth = 1.0
+        self.popView1.layer.borderColor = UIColor(red:216/255.0, green:216/255.0, blue:216/255.0, alpha: 1.0).cgColor
+        popView1.layer.cornerRadius = 15
+        brightView.isHidden = true
+        if popView1.isHidden == true {
+            forwardSlider.isHidden = false
+            popView1.isHidden = false
+        } else {
+            
+            popView1.isHidden = true
+            forwardSlider.isHidden = true
+        }
+    }
+
+    func SetUpSound() {
+        
+        if let path = Bundle.main.path(forResource: "fire", ofType: "mp3") {
+            let filePath = NSURL(fileURLWithPath:path)
+            player = try! AVAudioPlayer.init(contentsOf: filePath as URL)
+            player.numberOfLoops = -1 //logic for infinite loop
+            player.prepareToPlay()
+            player.play()
+        }
+        
+        let audioSession = AVAudioSession.sharedInstance()
+        try!audioSession.setCategory(AVAudioSessionCategoryPlayback, with: AVAudioSessionCategoryOptions.duckOthers)
+    }
+    
 
 }
+
+
+
+
 
