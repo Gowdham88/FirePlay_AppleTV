@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet var forwardSlider: UIView!
     @IBOutlet var brightView: UIView!
      
-    @IBOutlet var viewupDown: UIView!
+//    @IBOutlet var viewupDown: UIView!
     
     
     @IBOutlet var videoView: VideoPlay!
@@ -29,6 +29,9 @@ class ViewController: UIViewController {
     @IBOutlet var speedBtn: UILabel!
     
     @IBOutlet var popView1: UIView!
+    @IBOutlet var fastLabel: UILabel!
+    @IBOutlet var normalLabel: UILabel!
+    @IBOutlet var slowLabel: UILabel!
 
     var player:AVAudioPlayer = AVAudioPlayer()
     var avPlayer: AVPlayer!
@@ -40,20 +43,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.brightnessBtn.isHidden = true
-        self.speedBtn.isHidden = true
-        self.viewupDown.isHidden = true
+//        self.brightnessBtn.isHidden = true
+//        self.speedBtn.isHidden = true
+//        self.viewupDown.isHidden = true
         popView1.isHidden = true
        
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(sender:)))
-        self.view.addGestureRecognizer(tapGesture)
+        self.videoView.addGestureRecognizer(tapGesture)
       
         self.SetUpSound()
         
-//        playmyVideo(myString: "normal")
-        
-        
-        
+        playmyVideo(myString: "normal")
+        slowLabel.text = "Slow"
+        fastLabel.text = "Fast"
+        normalLabel.text = "Normal"
         
         
     }
@@ -69,7 +72,7 @@ class ViewController: UIViewController {
         //NSURL(string: "http://uploadingit.com/file/pkgz6mplwtodlzl6/Mac%20OS%20X%20Snow%20Leopard%20Intro%20Movie%20HD.mp4") as URL?
         
         let bundle: Bundle = Bundle.main
-        let videoPlayer: String = bundle.path(forResource: "normal", ofType: "mp4")!
+        let videoPlayer: String = bundle.path(forResource: myString, ofType: "mp4")!
         let movieUrl : NSURL = NSURL.fileURL(withPath: videoPlayer) as NSURL
         
         videoView.playVideoWithURL(url: movieUrl)
@@ -80,7 +83,25 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func slowSlider(_ sender: Any) {
+        
+        slowLabel.text = "Slow"
+        
+        playmyVideo(myString: "slow00")
+        
+    }
+    @IBAction func normalSlider(_ sender: Any) {
+        
+        normalLabel.text = "Normal"
+        playmyVideo(myString: "normal")
+        
+    }
 
+    @IBAction func fastSlider(_ sender: Any) {
+        fastLabel.text = "Fast"
+        playmyVideo(myString: "fast")
+        
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -99,18 +120,27 @@ class ViewController: UIViewController {
     
     func handleTap(sender: UITapGestureRecognizer) {
         
-        if self.viewupDown.isHidden {
+        if self.popView1.isHidden {
             
-            self.viewupDown.isHidden = false
-            popView1.isHidden   = false
+            popView1.isHidden = false
             
-        } else {
+        }else{
             
-            self.viewupDown.isHidden = true
             popView1.isHidden = true
-            
-            
         }
+//        
+//        if self.viewupDown.isHidden {
+//            
+//            self.viewupDown.isHidden = true
+//            popView1.isHidden   = false
+//            
+//        } else {
+//            
+//            self.viewupDown.isHidden = false
+//            popView1.isHidden = true
+//            
+//            
+//        }
         
     }
 
@@ -133,6 +163,8 @@ class ViewController: UIViewController {
         
     }
     @IBAction func brightPressed(_ sender: Any) {
+        
+        brightnessBtn.text = "Brightness"
         self.popView1.layer.borderWidth = 1.0
         
         self.popView1.layer.borderColor = UIColor(red:216/255.0, green:216/255.0, blue:216/255.0, alpha: 1.0).cgColor
@@ -155,6 +187,8 @@ class ViewController: UIViewController {
     
 
     @IBAction func fastForward(_ sender: Any) {
+       speedBtn.text = "Flame Speed"
+
         self.popView1.layer.borderWidth = 1.0
         self.popView1.layer.borderColor = UIColor(red:216/255.0, green:216/255.0, blue:216/255.0, alpha: 1.0).cgColor
         popView1.layer.cornerRadius = 15
@@ -181,6 +215,10 @@ class ViewController: UIViewController {
         
         let audioSession = AVAudioSession.sharedInstance()
         try!audioSession.setCategory(AVAudioSessionCategoryPlayback, with: AVAudioSessionCategoryOptions.duckOthers)
+    }
+    @IBAction func sleepTimer(_ sender: Any) {
+        
+        
     }
     
 

@@ -22,47 +22,50 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ec-54-8mn" customClass="VideoPlay" customModule="Fireplay" customModuleProvider="target">
-                                <rect key="frame" x="-3" y="-11" width="1926" height="1102"/>
+                                <rect key="frame" x="-3" y="-7" width="1926" height="1102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="39p-Up-rsC" appends="YES" id="2tR-Po-3su"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EPc-ie-EuW">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="268"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifI-lv-tvg" userLabel="fire">
+                                <rect key="frame" x="1600" y="25" width="171" height="159"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifI-lv-tvg" userLabel="fire">
-                                        <rect key="frame" x="1600" y="54" width="171" height="159"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" image="firetv"/>
-                                        <connections>
-                                            <action selector="fireOnoff:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="2ar-rG-gIm"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xA4-T4-9AT" userLabel="fast">
-                                        <rect key="frame" x="874" y="54" width="171" height="159"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" image="fasttv"/>
-                                        <connections>
-                                            <action selector="fastForward:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="vip-QN-1vg"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaT-hx-jQz" userLabel="bright">
-                                        <rect key="frame" x="50" y="54" width="171" height="159"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                        <state key="normal" image="brighttv"/>
-                                        <connections>
-                                            <action selector="brightPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="Q0o-54-Ev2"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </view>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" image="firetv"/>
+                                <connections>
+                                    <action selector="fireOnoff:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="2ar-rG-gIm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Euw-4s-gnI" userLabel="timer">
+                                <rect key="frame" x="1100" y="50" width="171" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" image="timer@1x"/>
+                                <connections>
+                                    <action selector="sleepTimer:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="2u8-SO-e35"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xA4-T4-9AT" userLabel="fast">
+                                <rect key="frame" x="500" y="25" width="171" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" image="fasttv"/>
+                                <connections>
+                                    <action selector="fastForward:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="vip-QN-1vg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaT-hx-jQz" userLabel="bright">
+                                <rect key="frame" x="50" y="25" width="171" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" image="brighttv"/>
+                                <connections>
+                                    <action selector="brightPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="Q0o-54-Ev2"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lty-Li-1m7">
                                 <rect key="frame" x="223" y="273" width="1473" height="533"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -100,6 +103,27 @@
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4v-wt-rHZ">
+                                                <rect key="frame" x="-61" y="100" width="200" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBC-BP-d1l">
+                                                <rect key="frame" x="550" y="100" width="250" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjA-iF-Ktc">
+                                                <rect key="frame" x="1190" y="100" width="250" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBf-bW-Kgv" userLabel="fast">
                                                 <rect key="frame" x="1229" y="-53" width="147" height="107"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -107,6 +131,9 @@
                                                 <state key="normal" image="Oval@1x">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="fastSlider:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="bjm-sb-z19"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThF-9A-xwu" userLabel="slow">
                                                 <rect key="frame" x="-40" y="-52" width="147" height="107"/>
@@ -115,6 +142,9 @@
                                                 <state key="normal" image="Oval@1x">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="slowSlider:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="LfR-jY-puL"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rf5-fG-TQz" userLabel="normal">
                                                 <rect key="frame" x="593" y="-49" width="147" height="107"/>
@@ -123,6 +153,9 @@
                                                 <state key="normal" image="Oval@1x">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="normalSlider:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="DKz-am-SYS"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -136,11 +169,13 @@
                     <connections>
                         <outlet property="brightView" destination="n1y-Bq-N9W" id="DiC-mV-Eld"/>
                         <outlet property="brightnessBtn" destination="444-a9-xQC" id="Dbp-hg-ETL"/>
+                        <outlet property="fastLabel" destination="hjA-iF-Ktc" id="Hvf-pO-baX"/>
                         <outlet property="forwardSlider" destination="82v-qX-Bw0" id="CZH-A6-7F7"/>
+                        <outlet property="normalLabel" destination="aBC-BP-d1l" id="AkK-nG-q2s"/>
                         <outlet property="popView1" destination="lty-Li-1m7" id="2w6-mC-LP8"/>
+                        <outlet property="slowLabel" destination="Z4v-wt-rHZ" id="PiX-YD-uwu"/>
                         <outlet property="speedBtn" destination="Z0B-Fc-aJA" id="rn9-hV-CPv"/>
                         <outlet property="videoView" destination="4Ec-54-8mn" id="a2Z-QZ-a3t"/>
-                        <outlet property="viewupDown" destination="EPc-ie-EuW" id="6b5-Bf-WXY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -155,5 +190,6 @@
         <image name="brighttv" width="80" height="80"/>
         <image name="fasttv" width="80" height="80"/>
         <image name="firetv" width="80" height="80"/>
+        <image name="timer@1x" width="100" height="114"/>
     </resources>
 </document>

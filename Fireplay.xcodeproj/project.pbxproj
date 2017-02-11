@@ -15,6 +15,11 @@
 		3F058BF71E38B0F600E26867 /* FireplayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F058BF61E38B0F600E26867 /* FireplayUITests.swift */; };
 		3F058C051E38BAE100E26867 /* fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F058C041E38BAE100E26867 /* fire.mp3 */; };
 		3FF02CF41E4DE5FF00B3484E /* VideoPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF02CF31E4DE5FF00B3484E /* VideoPlay.swift */; };
+		3FFE56AD1E4EDCB6002F958C /* normal.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3FF02CE71E4D754D00B3484E /* normal.mp4 */; };
+		3FFE56AE1E4EDCB9002F958C /* fast.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3FF02CE61E4D754D00B3484E /* fast.mp4 */; };
+		3FFE56AF1E4EDCBC002F958C /* slow00.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3FF02CE81E4D754D00B3484E /* slow00.mp4 */; };
+		3FFE56B21E4F127D002F958C /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFE56B01E4F127C002F958C /* Crashlytics.framework */; };
+		3FFE56B31E4F127D002F958C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFE56B11E4F127D002F958C /* Fabric.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +57,8 @@
 		3FF02CE71E4D754D00B3484E /* normal.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = normal.mp4; sourceTree = "<group>"; };
 		3FF02CE81E4D754D00B3484E /* slow00.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = slow00.mp4; sourceTree = "<group>"; };
 		3FF02CF31E4DE5FF00B3484E /* VideoPlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlay.swift; sourceTree = "<group>"; };
+		3FFE56B01E4F127C002F958C /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		3FFE56B11E4F127D002F958C /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FFE56B21E4F127D002F958C /* Crashlytics.framework in Frameworks */,
+				3FFE56B31E4F127D002F958C /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +91,8 @@
 		3F058BCD1E38B0F500E26867 = {
 			isa = PBXGroup;
 			children = (
+				3FFE56B01E4F127C002F958C /* Crashlytics.framework */,
+				3FFE56B11E4F127D002F958C /* Fabric.framework */,
 				3F058BD81E38B0F500E26867 /* Fireplay */,
 				3F058BEA1E38B0F600E26867 /* FireplayTests */,
 				3F058BF51E38B0F600E26867 /* FireplayUITests */,
@@ -144,6 +155,7 @@
 				3F058BD21E38B0F500E26867 /* Sources */,
 				3F058BD31E38B0F500E26867 /* Frameworks */,
 				3F058BD41E38B0F500E26867 /* Resources */,
+				3FFE56B41E4F12AA002F958C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -249,6 +261,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FFE56AF1E4EDCBC002F958C /* slow00.mp4 in Resources */,
+				3FFE56AE1E4EDCB9002F958C /* fast.mp4 in Resources */,
+				3FFE56AD1E4EDCB6002F958C /* normal.mp4 in Resources */,
 				3F058BE11E38B0F500E26867 /* Assets.xcassets in Resources */,
 				3F058BDF1E38B0F500E26867 /* Main.storyboard in Resources */,
 				3F058C051E38BAE100E26867 /* fire.mp3 in Resources */,
@@ -270,6 +285,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FFE56B41E4F12AA002F958C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PROJECT_DIR}/Fabric.framework/run\" 096d2916c1c968ecde8fe18920f0457e72de4897 66174dd29c08b8a43cd6044975f51b8aa530aac7a068373c562f75e5884c0c98";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F058BD21E38B0F500E26867 /* Sources */ = {
@@ -422,6 +453,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = XSJRRDKMW9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Fireplay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fireplaying.Fireplay;
@@ -436,6 +471,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = XSJRRDKMW9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Fireplay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fireplaying.Fireplay;
